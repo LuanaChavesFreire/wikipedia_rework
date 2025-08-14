@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+p {
+    text-align: justify;
+    margin-top: 5px;
+    font-size: 18;
+}
+
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+
+button {
+    margin-left: 0px;
+    height: 32px;
+    border: 1px rgb(54, 54, 54) solid;
+
+}
+
+h1, h2, h3 {
+    margin-bottom: 0px; 
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    font-weight: 100;
+}
+
+table tr th {
+    padding: 2px;
+    background-color: #b0c4de;
+}
+
+hr {
+    margin: 0px;
+}
+
+blockquote {
+    align-self: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: #999999 solid 1px;
+    border-left: 5px solid #fcbb2f;
+    font-style: italic;
+}
+
+.cap {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 5px;
+    margin: 0px ;
+}
+
+.conteudo {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabela {
+    border: 1px solid #999999;
+    background-color: #f8f9fa;
+    width: 350px;
+    padding: 2px;
+    border-collapse: separate;
+    float: right; 
+    margin-left: 10px;
+}
+
+.td1 {
+    vertical-align: top;
+    font-weight: 600;
+}
+
+.table-header {
+    height: 50px;
+    background-color: #b0c4de;
+}
+
+.table-header th {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bar {
+    padding: 0 10px;
+    border: 1px rgb(54, 54, 54) solid;
+    border-right: 0px;
+    height: 30px;
+    width: 400px;
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,13rem) minmax(0,2.5fr) minmax(0,13rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+
+.anchors {
+    width: 180px;
+    padding-right: 20px;
+    margin-right: 20px;
+    padding-top: 60px;
+}
+
+.sidebar {
+    width: 180px;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-top: 60px;
+}
