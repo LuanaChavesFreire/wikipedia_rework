@@ -16,7 +16,7 @@ p {
     font-size: 18;
 }
 
-ul { list-style: none; padding-left: 5px; }
+ul, li { padding-left: 5px; margin: 7px; }
 a { color:blue; text-decoration: none;}
 
 button {
@@ -48,6 +48,50 @@ blockquote {
     border: #999999 solid 1px;
     border-left: 5px solid #fcbb2f;
     font-style: italic;
+}
+
+.tabela-wiki {
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.tabela-wiki th {
+    background-color: #b3c6ff;
+    border: 1px solid #a2a9b1;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabela-wiki td {
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.tabela-wiki .categoria {
+    background-color: #e6e6ff;
+    font-weight: bold;
+    width: 160px;
+}
+
+.num {
+    list-style: decimal;
+    margin-top: 10px;
+}
+
+.list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.sub_topico {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .cap {
@@ -118,31 +162,38 @@ blockquote {
 }
 
 .content {
-    max-width: 1440px;
-    margin: auto;
+    max-width: 1660px;
+    margin: 10px;
     grid-gap: 3rem;
     display: grid;
     gap: 3rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,13rem) minmax(0,2.5fr) minmax(0,13rem);
+    grid-template-columns: minmax(0,12rem) minmax(0,2.5fr) minmax(0,12rem);
     padding-left: 1rem;
     padding-right: 1rem;
 }
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    font-size: 12px;
+    padding-left: 50px;
+    padding-top: 30px;
 }
 
 .anchors {
-    width: 180px;
-    padding-right: 20px;
-    margin-right: 20px;
-    padding-top: 60px;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 14px;
 }
 
 .sidebar {
-    width: 180px;
-    padding-left: 20px;
-    margin-left: 20px;
-    padding-top: 60px;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    padding-top: 30px;
+    padding-right: 20px;
+    font-size: 14px;
 }
